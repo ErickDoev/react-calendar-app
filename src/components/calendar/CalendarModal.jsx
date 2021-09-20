@@ -53,11 +53,12 @@ export const CalendarModal = () => {
     const [formValues, setFormValues] = useState(initEvent);
 
     const {notes, title, start, end} = formValues;
-
+   
     useEffect(() => {
 
         if( activeEvent ){
             setFormValues( activeEvent )
+            //console.log(formValues);
             //si activeEvent es null
         }else{
             setFormValues(initEvent)
@@ -65,7 +66,8 @@ export const CalendarModal = () => {
 
     }, [activeEvent,setFormValues]);
 
-    const handleInputChange = ({target}) => {
+    const handleInputChange = ({target}) => {  vbnm,{}
+    4
 
         setFormValues({
             ...formValues,
